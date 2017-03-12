@@ -1,0 +1,15 @@
+@import "../utils/variables.scss";
+
+.btn{
+  font-size: $f-size;
+  line-height: $l-height;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 0;
+  background-color: #fff;
+  color: $color-main;
+  border: 2px solid $color-main;
+  outline: none;
+  cursor: pointer;
+}

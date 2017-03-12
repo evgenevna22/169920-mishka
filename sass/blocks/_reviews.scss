@@ -1,0 +1,39 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.reviews{
+  padding: $padding-main;
+}
+.reviews__item{
+  padding-top: 23px;
+  color: $color-main;
+}
+.reviews__item-text{
+    padding-bottom: 13px;
+  }
+.reviews__item-user{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+.reviews__item-link{
+    font-size: $f-size;
+  }
+.reviews__control{
+  display: flex;
+  padding-top: 36px;
+  padding-bottom: 38px;
+}
+.reviews__btn{
+  width: 130px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid $border-color;
+}
+.reviews__btn-prev{
+  border-right: 0;
+}
+.reviews__writeus{
+  @include flex-column;
+}

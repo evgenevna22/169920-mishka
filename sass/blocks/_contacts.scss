@@ -1,0 +1,23 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.contacts{
+  padding: $padding-main;
+  @include flex-column;
+}
+.contacts__title{
+  padding-top: 35px;
+  padding-bottom: 23px;
+  font-size: 18px;
+}
+.contacts__info{
+  display: flex;
+  padding-bottom: 30px;
+  color: $color-main;
+  span{
+    padding-right: 32px;
+  }
+  a{
+    border-bottom: 1px solid #62d1ba;
+  }
+}

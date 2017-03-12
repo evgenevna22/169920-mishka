@@ -1,0 +1,35 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.main-nav {
+  display: flex;
+  padding: 20px 30px;
+}
+.main-nav__toggle{
+  position: absolute;
+  top: 29px;
+  right: 26px;
+  border: 0;
+  background-color: #fff;
+  font-size: 0;
+  cursor: pointer;
+}
+// Переделать блок меню
+
+.main-nav__items{
+  // position: absolute;
+  top: 85px;
+  left: 0px;
+  // z-index: 10;
+  @include flex-column;
+  width: 100%;
+  background-color: #fff;
+}
+.main-nav__item{
+  font-size: $f-size;
+  line-height: 24px;
+  padding: 21px 0 21px 76px;
+  font-weight: bold;
+  border-top: 1px solid $border-color;
+}
+

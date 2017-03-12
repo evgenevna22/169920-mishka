@@ -1,0 +1,27 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.page-header{
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+.page-header__logo{
+  margin-left: 86px;
+}
+.page-header__user-block{
+  position: relative;
+  // top: 215px;
+  left: 0px;
+  // z-index: 11;
+  @include flex-column;
+  width: 100%;
+  // min-height: 315px;
+  background-color: #fff;
+}
+.page-header__user-item{
+  font-size: $f-size;
+  line-height: 24px;
+  padding: 21px 0 21px 76px;
+  font-weight: bold;
+  border-top: 1px solid $border-color;
+}

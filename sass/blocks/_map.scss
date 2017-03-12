@@ -1,0 +1,17 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.map__bg{
+  min-height: 456px;
+  padding-bottom: 4px;
+  background-image: url('../../img/map-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  color: #f3f1ea;
+}
+iframe{
+  border: 0;
+}
+.map__writeus{
+  padding: $padding-main;
+  @include flex-column;
+}
