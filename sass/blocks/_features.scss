@@ -1,0 +1,14 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.features{
+  padding: $padding-main;
+}
+.features__item-pic{
+  padding-top: 30px;
+}
+.features__item-desc{
+  font-size: $f-size;
+  line-height: $l-height;
+  font-weight: bold;
+}
