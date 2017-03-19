@@ -3,7 +3,18 @@
   justify-content: space-around;
   padding: 27px 60px 18px 60px;
   border-bottom: 1px solid #e5e5e5;
+  @media (min-width: 768px){
+    display: flex;
+    width: 145px;
+    padding: 0;
+    padding-left: 60px;
+    justify-content: space-between;
+    border-bottom: 0;
+  }
 }
 .social-link {
   align-self: center;
+  @media (min-width: 768px){
+
+  }
 }

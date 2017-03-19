@@ -1,11 +1,30 @@
 .page-footer{
   background-color: $bg-gray;
 }
+.page-footer__container{
+  @media (min-width: 768px){
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+  }
+}
+.page-footer__logo{
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
 .page-footer__social{
   padding: 0 30px;
+  @media (min-width: 768px){
+    padding: 0;
+  }
 }
 .page-footer__copyright{
   padding: 23px 30px 30px 30px;
+  @media (min-width: 768px){
+    padding: 0;
+  }
 }
 .page-footer__copyright-link{
   padding-left: 39px;
@@ -15,5 +34,5 @@
   font-weight: bold;
 }
 .page-footer__copyright-item{
-  vertical-align: baseline;
+  vertical-align: sub;
 }

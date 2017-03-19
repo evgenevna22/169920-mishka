@@ -1,8 +1,41 @@
 .page-main__header{
   background-color: $bg-gray;
+  @media (min-width: 768px){
+    margin-top: -79px;
+    padding-top: 45px;
+    padding-bottom: 19px;
+    border-top: 1px solid $border-color;
+  }
 }
 .page-main__title{
   padding: 65px 0;
   font-size: 27px;
   text-align: center;
+  @media (min-width: 768px){
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: 1150px){
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+.page-main__titles{
+  padding: 17px 30px 22px;
+  @media (min-width: 768px){
+    padding-right: 100px;
+    padding-left: 50px;
+  }
+  @media (min-width: 1150px){
+    padding: 125px 246px 18px 217px;
+  }
+}
+.page-main__desc{
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-main;
+  @media (min-width: 768px){
+    font-size: $f-size;
+    line-height: inherit;
+  }
 }

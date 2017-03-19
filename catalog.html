@@ -19,15 +19,24 @@
           Открыть меню<img src="img/icon-menu-open.svg" alt="Открыть меню">
           </span>
           </button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--knitting"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--new"><a href="">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--sale"><a href="">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--delevery">Бесплатная доставка по России</li>
+          </ul>
+          <ul class="page-header__user-block">
+            <li class="page-header__user-item page-header__user-item--search">
+              <a href="#" class="page-header__search-link">Поиск по сайту</a>
+              <a href="#"><img class="page-header__search-icon" src="img/icon-search.svg" alt="Поиск" width="22" height="22"></a>
+            </li>
+            <li class="page-header__user-item page-header__user-item--cart">
+              <a lass="page-header__cart-link" href="#">Корзина: пока пуста</a>
+              <img class="page-header__cart-icon" src="img/icon-cart.svg" alt="Поиск" width="22" height="20">
+            </li>
+          </ul>
         </nav>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-        </ul>
-        <ul class="page-header__user-block">
-          <li class="page-header__user-item page-header__user-item--search"><a href="#">Поиск по сайту</a></li>
-          <li class="page-header__user-item page-header__user-item--cart"><a href="#">Корзина: пока пуста</a></li>
-        </ul>
       </div>
     </header>
     <main class="page-main">
@@ -40,7 +49,7 @@
         <section class="catalog">
           <article class="catalog__item">
             <a href="#" class="catalog__item-link">
-            <img src="img/photo-1-mobile@1x.jpg" alt="фото товара" class="catalog__item-pic" width="260" height="195">
+              <img src="img/photo-1-mobile@1x.jpg" alt="фото товара" class="catalog__item-pic" width="260" height="195">
             </a>
             <section class="catalog__item-desc">
               <a href="#" class="catalog__item-link">
@@ -50,14 +59,14 @@
               <div class="catalog__item-buy">
                 <span class="catalog__item-price">1 200 руб.</span>
                 <button class="catalog__item-btn" type="button" name="buy">
-                <img src="img/icon-cart.svg" alt="">
+                  <img src="img/icon-cart.svg" alt="">
                 </button>
               </div>
             </section>
           </article>
           <article class="catalog__item">
-            <a href="#" class="catalog__item-open">
-            <img src="img/photo-2-mobile@1x.jpg" alt="фото товара" class="catalog__item-pic" width="260" height="195">
+            <a href="#" class="catalog__item-link">
+              <img src="img/photo-2-mobile@1x.jpg" alt="фото товара" class="catalog__item-pic" width="260" height="195">
             </a>
             <section class="catalog__item-desc">
               <a href="#" class="catalog__item-open">
@@ -67,24 +76,24 @@
               <div class="catalog__item-buy">
                 <span class="catalog__item-price">690 руб.</span>
                 <button class="catalog__item-btn" type="button" name="buy">
-                <img src="img/icon-cart.svg" alt="">
+                  <img src="img/icon-cart.svg" alt="">
                 </button>
               </div>
             </section>
           </article>
           <article class="catalog__item">
-            <a href="#" class="catalog__item-open">
+            <a href="#" class="catalog__item-link">
             <img src="img/photo-3-mobile@1x.jpg" alt="фото товара" class="catalog__item-pic" width="260" height="195">
             </a>
             <section class="catalog__item-desc">
               <a href="#" class="catalog__item-open">
-                <h2 class="catalog__item-title">Большая корзинка для игрушек</h2>
+                <h2 class="catalog__item-title">Большая корзинка<br>для игрушек</h2>
               </a>
               <span class="catalog__item-parameter">Диаметр 30 см, высота 30 см</span>
-              <div class="catalog__item-buy">
+              <div class="catalog__item-buy catalog__item-buy--cart">
                 <span class="catalog__item-price">1 500 руб.</span>
                 <button class="catalog__item-btn" type="button" name="buy">
-                <img src="img/icon-cart.svg" alt="">
+                  <img src="img/icon-cart.svg" alt="">
                 </button>
               </div>
             </section>
@@ -92,53 +101,58 @@
         </section>
         <section class="production-process">
           <div class="production-process__item">
-            <div class="production-process__desc">
-              <img src="img/icon-video.svg" alt="" class="production-process__desc-pic">
-              <h2 class="production-process__title">Процесс<br> производства</h2>
-            </div>
             <div class="production-process__player">
               <picture>
                 <img src="img/video-mobile@1x.jpg" alt="фото видео" class="production-process__player-pic">
               </picture>
             </div>
-            <div class="production-process__text">
-              <p>
+            <div class="production-process__desc">
+              <img src="img/icon-video.svg" alt="" class="production-process__desc-pic">
+              <h2 class="production-process__title">Процесс производства</h2>
+              <p class="production-process__text">
                 По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </p>
-            </div>
-            <div class="production-process__order-btn">
-              <button class="btn production-process__btn" type="button" name="button">Сделать заказ</button>
+              <div class="production-process__order-btn">
+                <button class="btn production-process__btn" type="button" name="button">Сделать заказ</button>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container container">
-        <div class="page-footer__social">
-          <ul class="social-links">
-            <li class="social-link social-link--inst">
-              <a href="https://www.instagram.com">
-              <img src="img/icon-insta.svg" alt="" width="22" height="21">
-              </a>
-            </li>
-            <li class="social-link social-link--fc">
-              <a href="https://www.facebook.com">
-              <img src="img/icon-fb.svg" alt="" width="14" height="29">
-              </a>
-            </li>
-            <li class="social-link social-link--tw">
-              <a href="https://www.twitter.com">
-              <img src="img/icon-twitter.svg" alt="" width="24" height="20">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru" class="page-footer__copyright-link">Разработано</a>
-          <a href="https://htmlacademy.ru" class="page-footer__copyright-item">
-          <img src="img/logo-htmlacademy.svg" alt="" width="24" height="20">
-          </a>
+      <div class="container">
+        <div class="page-footer__container">
+          <picture class="page-footer__logo">
+            <a href="index.html">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+            </a>
+          </picture>
+          <div class="page-footer__social">
+            <ul class="social-links">
+              <li class="social-link social-link--inst">
+                <a href="https://www.instagram.com">
+                <img src="img/icon-insta.svg" alt="" width="22" height="21">
+                </a>
+              </li>
+              <li class="social-link social-link--fc">
+                <a href="https://www.facebook.com">
+                <img src="img/icon-fb.svg" alt="" width="14" height="29">
+                </a>
+              </li>
+              <li class="social-link social-link--tw">
+                <a href="https://www.twitter.com">
+                <img src="img/icon-twitter.svg" alt="" width="24" height="20">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <a href="https://htmlacademy.ru" class="page-footer__copyright-link">Разработано</a>
+            <a href="https://htmlacademy.ru" class="page-footer__copyright-item">
+            <img src="img/logo-htmlacademy.svg" alt="" width="24" height="20">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

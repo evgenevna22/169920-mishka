@@ -3,12 +3,76 @@
 
 .features{
   padding: $padding-main;
+  @media (min-width: 768px){
+    padding: 60px 50px 44px 50px;
+  }
+  @media (min-width: 1150px){
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-bottom: 50px;
+  }
+}
+.features__item-title{
+  font-size: 25px;
+  @media (min-width: 768px){
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: 1150) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+.features__list{
+  @media (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.features__item{
+  @media (min-width: 768px){
+    width: 50%;
+  }
 }
 .features__item-pic{
   padding-top: 30px;
+  @media (min-width: 768px){
+    padding-top: 44px;
+  }
 }
 .features__item-desc{
   font-size: $f-size;
   line-height: $l-height;
   font-weight: bold;
+}
+.features__item--ecology{
+  @media (min-width: 768px){
+    order: 1;
+  }
+}
+.features__item--style{
+  @media (min-width: 768px){
+    order: 3;
+  }
+}
+.features__item--likes{
+  @media (min-width: 768px){
+    order: 5;
+  }
+}
+.features__item--handmade{
+  @media (min-width: 768px){
+    order: 2;
+  }
+}
+.features__item--native{
+  @media (min-width: 768px){
+    order: 4;
+  }
+}
+.features__item--giftwrap{
+  @media (min-width: 768px){
+    order: 6;
+  }
 }

@@ -2,31 +2,119 @@
 @import "../utils/mixins.scss";
 
 .main-nav {
-  display: flex;
+  @include flex-column;
   padding: 20px 30px;
+  @media (min-width: 768px){
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 87px;
+    padding: 0 50px;
+  }
+  @media (min-width: 1150px){
+    position: relative;
+    align-items: flex-start;
+  }
 }
 .main-nav__toggle{
   position: absolute;
   top: 29px;
   right: 26px;
   border: 0;
-  background-color: #fff;
+  background-color: transparent;
   font-size: 0;
   cursor: pointer;
+  @media (min-width: 768px){
+    display: none;
+  }
 }
 .main-nav__items{
-  // position: absolute;
-  top: 85px;
-  left: 0px;
-  // z-index: 10;
   @include flex-column;
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
+  @media (min-width: 768px){
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: auto;
+    order: 2;
+  }
+  @media (min-width: 1150px){
+    flex-wrap: wrap;
+    width: 40%;
+    order: 1;
+    margin-left: 0;
+  }
 }
 .main-nav__item{
   font-size: $f-size;
   line-height: 24px;
-  padding: 21px 0 21px 76px;
+  padding: 26px 0 28px 76px;
   font-weight: bold;
   border-top: 1px solid $border-color;
+  @media (min-width: 768px){
+    padding: 26px 35px 28px 0;
+    border: 0;
+  }
+  @media (min-width: 1150px){
+
+  }
+}
+.main-nav__item--new{
+  @media (min-width: 1150px){
+    padding-right: 57px;
+  }
+}
+.main-nav__item--new,
+.main-nav__item--sale{
+  display: none;
+  @media (min-width: 768px){
+    display: none;
+  }
+  @media (min-width: 1150px){
+    display: block;
+    font-size: inherit;
+  }
+}
+.main-nav__item--catalog{
+  @media (min-width: 1150px){
+    padding-right: 24px;
+    border-right: 1px solid #ececec;
+  }
+}
+.main-nav__item--knitting{
+  @media (min-width: 1150px){
+    padding-left: 31px;
+  }
+}
+.main-nav__item--catalog,
+.main-nav__item--knitting,
+.main-nav__item--delevery{
+  display: inline-block;
+  font-size: 15px;
+  @media (min-width: 1150px){
+    width: 40%;
+    padding-right: 6px;
+    font-size: $f-size;
+  }
+}
+.main-nav__item--delevery{
+  display: none;
+  @media (min-width: 768px){
+    display: block;
+    margin-left: auto;
+    padding-right: 0;
+    font-weight: normal;
+    line-height: 24px;
+    color: $color-main;
+  }
+  @media (min-width: 1150px){
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    width: 23%;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+    color: $color-main;
+  }
 }

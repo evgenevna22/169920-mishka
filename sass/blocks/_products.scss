@@ -3,38 +3,114 @@
 
 .products{
   padding: $padding-main;
+  @media (min-width: 768px){
+    position: relative;
+    padding: 30px 50px;
+  }
+}
+.products__item{
+  @media (min-width: 768px){
+    width: 42%;
+  }
+  @media (min-width: 1150px){
+    width: 26%;
+    margin-left: 158px;
+  }
+}
+.products__item-titles{
+  @media (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+  @media (min-width: 1150px){
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: 92px;
+    margin-left: 17px;
+    margin-bottom: 48px;
+  }
 }
 .products__item-title{
   font-size: 25px;
+  @media (min-width: 768px){
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: 1150px){
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 10;
+  }
 }
 .products__item-subtitle{
   font-size: $f-size;
   line-height: $l-height;
   text-transform: uppercase;
   color: #63d1bb;
+  @media (min-width: 768px){
+    flex-basis: 80px;
+    align-self: center;
+    margin-right: 17px;
+    line-height: 17px;
+  }
+  @media (min-width: 1150px){
+    margin-right: 58px;
+  }
 }
 .products__item-desc{
   margin-top: 20px;
   margin-bottom: 12px;
   line-height: 24px;
   color: $color-main;
+  @media (min-width: 768px){
+    flex-basis: 236px;
+    font-size: $f-size;
+    margin-bottom: 56px;
+  }
+  @media (min-width: 1150px){
+    margin-bottom: 46px;
+    line-height: inherit;
+  }
 }
 .products__item-format{
   width: 100%;
   margin-bottom: 28px;
   color: $color-main;
   border-collapse: collapse;
+  @media (min-width: 768px){
+    line-height: $l-height;
+    margin-bottom: 60px;
+  }
+  @media (min-width: 1150px) {
+    margin-bottom: 106px;
+  }
 }
 .products__item-tr{
   line-height: $l-height;
   border-bottom: 1px solid $border-color;
 }
-.products__item-parameter, .products__item-value{
+.products__item-parameter,
+.products__item-value{
   padding-bottom: 10px;
   padding-top: 10px;
 }
 .products__item-parameter{
   padding-right: 30px;
+}
+.products__item-pic{
+  @media (min-width: 768px){
+    position: absolute;
+    top: 130px;
+    right: 50px;
+  }
+  @media (min-width: 1150px){
+    width: 525px;
+    height: 640px;
+    top: 60px;
+    z-index: 5;
+  }
 }
 .products__order{
   @include flex-column;
@@ -46,4 +122,11 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 18px;
+  @media (min-width: 768px){
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  @media (min-width: 1150px){
+    margin-bottom: 31px;
+  }
 }
