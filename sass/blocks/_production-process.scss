@@ -1,24 +1,60 @@
 .production-process{
   padding: 0 30px;
+  @media (min-width: 768px) {
+    padding: 0 50px;
+  }
 }
 .production-process__item{
+  position: relative;
   margin-bottom: 58px;
   border: 1px solid #ededed;
+  @media (min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    border-top: 0;
+  }
+  @media (min-width: 1150px){
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #ededed;
+  }
 }
 .production-process__desc{
-  display: flex;
-  padding: 25px 0;
+  @include flex-column;
+  padding: 25px 27px 32px;
+  @media (min-width: 768px){
+    position: relative;
+  }
+  @media (min-width: 1150px){
+    width: 31%;
+  }
 }
 .production-process__desc-pic{
-  padding-left: 33px;
-  padding-right: 35px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  padding: 0 29px;
+  @media (min-width: 768px){
+    top: 40px;
+    padding: 0 33px 0 70px;
+  }
 }
 .production-process__title{
+  position: absolute;
+  top: 23px;
+  left: 91px;
+  padding-right: 40px;
   font-size: $f-size;
   line-height: 24px;
+  @media (min-width: 768px){
+    position: initial;
+    padding-top: 65px;
+    padding-left: 40px;
+    padding-right: 68px;
+  }
 }
 .production-process__player{
-  position: relative;
+  padding-top: 95px;
   &::after{
     content: '';
     position: absolute;
@@ -27,21 +63,53 @@
     min-width: 101px;
     min-height: 77px;
     background-image: url('../../img/icon-play.svg');
+    cursor: pointer;
+  }
+  @media (min-width: 768px){
+    padding-top: 0;
+    order: -1;
+    &::after{
+      top: 40%;
+      left: 45%;
+    }
+  }
+  @media (min-width: 1150px){
+    width: 70%;
+    padding-right: 10px;
   }
 }
 .production-process__player-pic{
-  min-width: 260px;
+  width: 258px;
   min-height: 150px;
+  vertical-align: bottom;
+  @media (min-width: 768px){
+    width: 100%;
+    min-height: 454px;
+    border-bottom: 1px solid #ededed;
+  }
+  @media (min-width: 1150px){
+    min-height: 454px;
+    border-bottom: 0;
+  }
 }
 .production-process__text{
-  padding: 17px 29px 22px 29px;
-  p{
-    font-size: 13px;
-    line-height: 24px;
-    color: $color-main;
+  padding: 0 24px 22px 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-main;
+  @media (min-width: 768px){
+    font-size: inherit;
+    line-height: 30px;
+    padding-top: 32px;
+    padding-right: 71px;
+    padding-left: 42px;
+    padding-bottom: 35px;
   }
 }
 .production-process__order-btn{
   @include flex-column;
-  padding: 0 33px 32px 33px;
+  padding-right: 12px;
+  @media (min-width: 768px){
+    padding: 0 42px 13px 42px;
+  }
 }

@@ -1,0 +1,331 @@
+.order-form__item{
+  padding: 4px 30px 0;
+  border: 0;
+  @media (min-width: 768px) {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.order-form--color{
+  @media (min-width: 768px){
+    padding-bottom: 15px;
+    background-color: #f1f1f1;
+  }
+}
+.order-form__item--user-data{
+  @media (min-width: 768px){
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+}
+.order-form__title {
+  position: relative;
+  margin-top: 19px;
+  margin-bottom: 34px;
+  font-size: $f-size;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 198px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+  @media (min-width: 768px){
+    margin-top: 0;
+    &::after{
+      content: none;
+    }
+  }
+}
+.order-form__wrapper{
+  @include flex-column;
+  position: relative;
+  &--phone,
+  &--email{
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 32px;
+      right: 8px;
+      opacity: 0.2;
+      @media (min-width: 768px) {
+        bottom: 37px;
+        right: 22px;
+      }
+      @media (min-width: 1150px){
+        bottom: 32px;
+        right: 18%;
+      }
+    }
+  }
+  &--phone{
+    &::before{
+      width: 25px;
+      height: 24px;
+      background-image: url('../../img/icon-phone.svg');
+    }
+  }
+  &--email{
+    &::before{
+      width: 32px;
+      height: 26px;
+      background-image: url('../../img/icon-mail.svg');
+    }
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+.order-form__titles{
+  @media (min-width: 768px) {
+    margin-right: 122px;
+  }
+}
+.order-form__label{
+  display: block;
+  padding-left: 62px;
+  padding-bottom: 31px;
+  position: relative;
+  font-size: $f-size;
+  line-height: 18px;
+  font-weight: bold;
+  @media (min-width: 768px){
+    padding-bottom: 60px;
+    padding-left: 70px;
+  }
+}
+.order-form__radio{
+  @media (min-width: 768px){
+    padding-left: 85px;
+  }
+}
+.order-form__checkbox{
+  @media (min-width: 768px){
+    min-width: 177px;
+    padding-bottom: 48px;
+  }
+}
+.order-form__input{
+  display: none;
+}
+.order-form__radio::before,
+.order-form__checkbox::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid $color-main;
+  @media (min-width: 768px){
+    top: -14px;
+  }
+}
+.order-form__radio::before{
+  border-radius: 50%;
+  @media (min-width: 768px){
+    left: 11px;
+  }
+}
+.order-form__checkbox::before{
+  top: -11px;
+}
+.order-form__radio::after{
+  content: '';
+  display: none;
+  position: absolute;
+  left: 14.5px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+  @media (min-width: 768px){
+    top: 0;
+    left: 25px;
+  }
+}
+.order-form__checkbox::after{
+  content: '';
+  display: none;
+  position: absolute;
+  left: 7px;
+  top: 0px;
+  width: 33px;
+  height: 23px;
+  background-image: url('../../img/icon-tick.svg');
+}
+input[type="radio"]:checked + label::after,
+input[type="checkbox"]:checked + label::after{
+  display: block;
+}
+.order-form__parameter{
+  @media (min-width: 768px){
+    @include flex-column;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1150px) {
+    width: 67%;
+  }
+}
+.order-form__parameter{
+  &--color{
+    @media (min-width: 768px){
+      flex-direction: row;
+    }
+  }
+}
+.order-form__filter{
+  @media (min-width: 768px){
+    width: 50%;
+  }
+  @media (min-width: 1150px){
+    width: 33%;
+  }
+}
+.order-form__item--user,
+.order-form__item--userdata{
+  border: 0;
+  label {
+    margin-bottom: 7px;
+    font-size: $f-size;
+    font-weight: bold;
+    line-height: 18px;
+  }
+}
+.order-form__item--user{
+  @media (min-width: 768px){
+    margin-top: 17px;
+    margin-bottom: 35px;
+  }
+}
+.order-form__item--userdata{
+  &--phone{
+    @media (min-width: 768px){
+      padding-top: 4px;
+    }
+  }
+}
+.order-form__title--name{
+  @media (min-width: 768px){
+    margin-right: 5px;
+  }
+}
+
+.order-form__text{
+  width: 260px;
+  height: 35px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: $f-size;
+  line-height: 18px;
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid $color-main;
+  @media (min-width: 768px){
+    width: 433px;
+    margin-left: 23px;
+    font-size: 19px;
+  }
+  @media (min-width: 1050px){
+    width: 89.7%;
+  }
+}
+.order-form__text--surname,
+.order-form__text--patronymic{
+  @media (min-width: 768px){
+    width: 389px;
+  }
+  @media (min-width: 1050px){
+    width: 83.5%;
+  }
+}
+.order-form__title--user{
+  margin-bottom: 0;
+  @media (min-width: 768px){
+    margin-right: 84px;
+    padding-top: 12px;
+  }
+}
+.order-form__text--phone{
+  @media (min-width: 768px){
+    margin-left: 48px;
+  }
+}
+.order-form__text--phone,
+.order-form__text--email{
+  @media (min-width: 768px){
+    width: 75%;
+    background-color: #f1f1f1;
+  }
+  @media (min-width: 1050px){
+    width: 66.6%;
+  }
+}
+.order-form__add-text{
+  width: 226px;
+  height: 142px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  padding: 15px;
+  font-size: $f-size;
+  line-height: 18px;
+  resize: none;
+  border: 2px solid $color-main;
+  outline: none;
+  @media (min-width: 768px){
+    width: 75%;
+    margin-top: -6px;
+    margin-left: 45px;
+    font-size: 19px;
+  }
+  @media (min-width: 1150px){
+    width: 63.5%;
+  }
+}
+::-webkit-input-placeholder {color: #c7c7c7; padding-left: 10px;}
+::-moz-placeholder {color: #c7c7c7; padding-left: 10px;}
+:-ms-input-placeholder {color: #c7c7c7; padding-left: 10px;}
+
+.order-form__order{
+  @include flex-column;
+  padding: 0 30px 55px;
+  @media (min-width: 768px){
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 50px 55px;
+  }
+  @media (min-width: 1150px){
+    padding: 35px 233px 55px 218px;
+  }
+}
+.order-form__item-note{
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-main;
+  @media (min-width: 768px){
+    align-self: center;
+    margin-bottom: 0;
+    font-size: $f-size;
+    line-height: inherit;
+  }
+}
+.order-form__btn{
+  @media (min-width: 768px){
+    width: 34%;
+    order: -1;
+  }
+  @media (min-width: 1150px){
+    width: 33%;
+  }
+}
