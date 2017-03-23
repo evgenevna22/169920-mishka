@@ -20,20 +20,24 @@
           </span>
           </button>
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item main-nav__item--knitting"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item main-nav__item--new"><a href="">Новые поступления</a></li>
-            <li class="main-nav__item main-nav__item--sale"><a href="">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html" class="main-nav__item-link">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--knitting"><a href="form.html" class="main-nav__item-link">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--new"><a href="" class="main-nav__item-link">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--sale"><a href="" class="main-nav__item-link">Распродажа</a></li>
             <li class="main-nav__item main-nav__item--delevery">Бесплатная доставка по России</li>
           </ul>
           <ul class="page-header__user-block">
             <li class="page-header__user-item page-header__user-item--search">
-              <a href="#" class="page-header__search-link">Поиск по сайту</a>
-              <img class="page-header__search-icon" src="img/icon-search.svg" alt="Поиск" width="22" height="22">
+              <a href="#" class="page-header__search-link">
+                <span class="page-header__search">Поиск по сайту</span>
+                <img class="page-header__search-icon" src="img/icon-search.svg" alt="Поиск" width="22" height="22">
+              </a>
             </li>
             <li class="page-header__user-item page-header__user-item--cart">
-              <a lass="page-header__cart-link" href="#">Корзина: пока пуста</a>
-              <a href="#"><img class="page-header__search-icon" src="img/icon-cart.svg" alt="Поиск" width="22" height="22"></a>
+              <a class="page-header__cart-link" href="#">
+                <span class="page-header__cart">Корзина: пока пуста</span>
+                <img class="page-header__cart-icon" src="img/icon-cart.svg" alt="Поиск" width="22" height="22">
+              </a>
             </li>
           </ul>
         </nav>
@@ -60,9 +64,9 @@
                 <h2 class="order-form__title">Тип</h2>
               </div>
               <div class="order-form__parameter">
-                <input type="radio" id="accesory" class="order-form__input" name="type" value="accesory">
+                <input type="radio" id="accesory" class="order-form__input" name="type" value="accesory"  checked>
                 <label for="accesory" class="order-form__label order-form__radio">Аксессуар для интерьера<br></label>
-                <input type="radio" id="toy" class="order-form__input" name="type" value="toy" checked>
+                <input type="radio" id="toy" class="order-form__input" name="type" value="toy">
                 <label for="toy" class="order-form__label order-form__radio">Детская игрушка</label>
               </div>
             </div>
@@ -70,10 +74,10 @@
         </div>
         <div class="order-form--color">
           <div class="container">
-            <fieldset class="order-form__item">
+            <fieldset class="order-form__item order-form__item--color">
               <div class="order-form__wrapper">
                 <div class="order-form__titles">
-                  <h2 class="order-form__title">Цвет</h2>
+                  <h2 class="order-form__title order-form__title--color">Цвет</h2>
                 </div>
                 <ul class="order-form__parameter order-form__parameter--color">
                   <li class="order-form__filter">
@@ -146,19 +150,19 @@
         </div>
         <div class="order-form--color">
           <div class="container">
-            <fieldset class="order-form__item order-form__item--userdata order-form__item--user-data">
+            <fieldset class="order-form__item order-form__item--userdata order-form__item--userdata-email">
               <div class="order-form__wrapper order-form__wrapper--email">
-                <h2 class="order-form__title order-form__title--user">E-mail</h2>
+                <h2 class="order-form__title order-form__title--user order-form__title--email">E-mail</h2>
                 <input type="text" id="email" class="order-form__text order-form__text--email" name="email" placeholder="Ваш Email*">
               </div>
             </fieldset>
           </div>
         </div>
         <div class="container">
-          <fieldset class="order-form__item order-form__item--userdata">
+          <fieldset class="order-form__item order-form__item--userdata order-form__item--uderdata-add">
             <div class="order-form__wrapper">
-              <h2 class="order-form__title order-form__title--user">Доп</h2>
-              <textarea name="suggestion" id="suggestion" cols="30" rows="7" placeholder="Опишите все ваши пожелания к заказу" class="order-form__add-text"></textarea>
+              <h2 class="order-form__title order-form__title--user order-form__title--add">Доп</h2>
+              <textarea name="suggestion" id="suggestion" cols="7" rows="6" placeholder="Опишите все ваши пожелания к заказу" class="order-form__add-text"></textarea>
             </div>
           </fieldset>
           <div class="order-form__order">

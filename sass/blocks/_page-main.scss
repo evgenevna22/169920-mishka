@@ -1,17 +1,22 @@
 .page-main__header{
   background-color: $bg-gray;
   @media (min-width: 768px){
-    margin-top: -79px;
+    margin-top: -75px;
     padding-top: 45px;
     padding-bottom: 19px;
     border-top: 1px solid $border-color;
   }
+  @media (min-width: 1150px){
+    padding-top: 43px;
+    padding-bottom: 41px;
+  }
 }
 .page-main__title{
-  padding: 65px 0;
+  padding: 71px 0 76px;
   font-size: 27px;
   text-align: center;
   @media (min-width: 768px){
+    padding: 49px 0 60px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -21,13 +26,14 @@
   }
 }
 .page-main__titles{
-  padding: 17px 30px 22px;
+  padding: 22px 50px 0 30px;
   @media (min-width: 768px){
     padding-right: 100px;
     padding-left: 50px;
+    margin-top: 51px;
   }
   @media (min-width: 1150px){
-    padding: 125px 246px 18px 217px;
+    padding: 73px 247px 0 226px;
   }
 }
 .page-main__desc{

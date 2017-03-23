@@ -5,16 +5,20 @@
   padding: $padding-main;
   @media (min-width: 768px){
     position: relative;
-    padding: 30px 50px;
+    padding: 47px 48px;
+  }
+  @media (min-width: 1150px){
+    padding: 33px 66px;
   }
 }
 .products__item{
   @media (min-width: 768px){
-    width: 42%;
+    width: 43.5%;
   }
   @media (min-width: 1150px){
-    width: 26%;
+    width: 29%;
     margin-left: 158px;
+    margin-bottom: 51px;
   }
 }
 .products__item-titles{
@@ -22,7 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 44px;
+    margin-bottom: 49px;
   }
   @media (min-width: 1150px){
     flex-direction: row-reverse;
@@ -52,39 +56,46 @@
   @media (min-width: 768px){
     flex-basis: 80px;
     align-self: center;
-    margin-right: 17px;
+    margin-right: 18px;
+    padding-top: 5px;
     line-height: 17px;
   }
   @media (min-width: 1150px){
-    margin-right: 58px;
+    margin-right: 46px;
+    margin-left: 13px;
+    padding-top: 7px;
   }
 }
 .products__item-desc{
-  margin-top: 20px;
-  margin-bottom: 12px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  padding-right: 12px;
   line-height: 24px;
   color: $color-main;
   @media (min-width: 768px){
     flex-basis: 236px;
+    margin-bottom: 35px;
+    padding-right: 11px;
     font-size: $f-size;
-    margin-bottom: 56px;
+    line-height: 30px;
   }
   @media (min-width: 1150px){
-    margin-bottom: 46px;
+    width: 91%;
+    margin-bottom: 49px;
     line-height: inherit;
   }
 }
 .products__item-format{
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   color: $color-main;
   border-collapse: collapse;
   @media (min-width: 768px){
     line-height: $l-height;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
   @media (min-width: 1150px) {
-    margin-bottom: 106px;
+    margin-bottom: 107px;
   }
 }
 .products__item-tr{
@@ -95,38 +106,45 @@
 .products__item-value{
   padding-bottom: 10px;
   padding-top: 10px;
+  @media (min-width: 1150px){
+    padding-bottom: 11px;
+    padding-top: 9px;
+  }
 }
 .products__item-parameter{
-  padding-right: 30px;
+  padding-right: 15px;
+  @media (min-width: 768px){
+    padding-right: 4px;
+  }
+  @media (min-width: 1150px){
+    padding-right: 2px;
+  }
 }
 .products__item-pic{
   @media (min-width: 768px){
     position: absolute;
-    top: 130px;
+    top: 154px;
     right: 50px;
   }
   @media (min-width: 1150px){
     width: 525px;
-    height: 640px;
-    top: 60px;
+    height: 636px;
+    top: 73px;
     z-index: 5;
   }
 }
 .products__order{
   @include flex-column;
-  margin-top: 17px;
+  margin-top: 15px;
 }
 .products__item-piece{
   font-size: $f-size;
   line-height: 24px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 26px;
   @media (min-width: 768px){
     font-size: 20px;
-    margin-bottom: 35px;
-  }
-  @media (min-width: 1150px){
-    margin-bottom: 31px;
+    margin-bottom: 34px;
   }
 }

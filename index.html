@@ -20,20 +20,24 @@
           </span>
           </button>
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item main-nav__item--knitting"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item main-nav__item--new"><a href="">Новые поступления</a></li>
-            <li class="main-nav__item main-nav__item--sale"><a href="">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html" class="main-nav__item-link">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--knitting"><a href="form.html" class="main-nav__item-link">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--new"><a href="" class="main-nav__item-link">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--sale"><a href="" class="main-nav__item-link">Распродажа</a></li>
             <li class="main-nav__item main-nav__item--delevery">Бесплатная доставка по России</li>
           </ul>
           <ul class="page-header__user-block">
             <li class="page-header__user-item page-header__user-item--search">
-              <a href="#" class="page-header__search-link">Поиск по сайту</a>
-              <a href="#"><img class="page-header__search-icon" src="img/icon-search.svg" alt="Поиск" width="22" height="22"></a>
+              <a href="#" class="page-header__search-link">
+                <span class="page-header__search">Поиск по сайту</span>
+                <img class="page-header__search-icon" src="img/icon-search.svg" alt="Поиск" width="22" height="22">
+              </a>
             </li>
             <li class="page-header__user-item page-header__user-item--cart">
-              <a lass="page-header__cart-link" href="#">Корзина: пока пуста</a>
-              <img class="page-header__cart-icon" src="img/icon-cart.svg" alt="Поиск" width="22" height="20">
+              <a class="page-header__cart-link" href="#">
+                <span class="page-header__cart">Корзина: пока пуста</span>
+                <img class="page-header__cart-icon" src="img/icon-cart.svg" alt="Поиск" width="22" height="22">
+              </a>
             </li>
           </ul>
         </nav>
@@ -42,10 +46,12 @@
     <main class="page-main">
       <section class="main-header">
         <h1 class="main-header__title">Милые штуки ручной<br> работы для дома</h1>
-        <section class="promo-nav">
-          <a href="#" class="promo-nav__item promo-nav__item--interior">Предметы<br> интерьера</a>
-          <a href="#" class="promo-nav__item promo-nav__item--toys">Детские<br> игрушки</a>
-        </section>
+        <div class="container">
+          <section class="promo-nav">
+            <a href="#" class="promo-nav__item promo-nav__item--interior"><span>Предметы<br> интерьера</span></a>
+            <a href="#" class="promo-nav__item promo-nav__item--toys">Детские<br> игрушки</a>
+          </section>
+        </div>
       </section>
       <div class="container">
         <section class="products main--underline">
