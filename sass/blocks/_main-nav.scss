@@ -3,7 +3,7 @@
 
 .main-nav {
   @include flex-column;
-  padding: 20px 30px;
+  padding: 20px 30px 14px;
   @media (min-width: 768px){
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
 .main-nav__toggle{
   position: absolute;
   top: 29px;
-  right: 26px;
+  right: 25px;
   border: 0;
   background-color: transparent;
   font-size: 0;
@@ -51,16 +51,23 @@
   font-weight: bold;
   border-top: 1px solid $border-color;
   @media (min-width: 768px){
-    padding: 26px 35px 28px 0;
+    padding: 20px 35px 34px 0;
     border: 0;
   }
   @media (min-width: 1150px){
-
+    padding-top: 19px;
+    padding-bottom: 33px;
+  }
+}
+.main-nav__item-link{
+  padding: 26px 0;
+  @media (min-width: 1150px){
+    padding: 21px 0;
   }
 }
 .main-nav__item--new{
   @media (min-width: 1150px){
-    padding-right: 57px;
+    padding-right: 69px;
   }
 }
 .main-nav__item--new,
@@ -82,7 +89,7 @@
 }
 .main-nav__item--knitting{
   @media (min-width: 1150px){
-    padding-left: 31px;
+    padding-left: 33px;
   }
 }
 .main-nav__item--catalog,
@@ -90,9 +97,13 @@
 .main-nav__item--delevery{
   display: inline-block;
   font-size: 15px;
+  @media (min-width: 768px){
+    padding-top: 17px;
+  }
   @media (min-width: 1150px){
-    width: 40%;
-    padding-right: 6px;
+    width: 42%;
+    padding-top: 30px;
+    padding-right: 8px;
     font-size: $f-size;
   }
 }
@@ -101,7 +112,7 @@
   @media (min-width: 768px){
     display: block;
     margin-left: auto;
-    padding-right: 0;
+    padding-right: 8px;
     font-weight: normal;
     line-height: 24px;
     color: $color-main;

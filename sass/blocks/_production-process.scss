@@ -11,46 +11,56 @@
   @media (min-width: 768px){
     display: flex;
     flex-direction: column;
+    margin-bottom: 63px;
     border-top: 0;
   }
   @media (min-width: 1150px){
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 105px;
     border-top: 1px solid #ededed;
   }
 }
 .production-process__desc{
   @include flex-column;
-  padding: 25px 27px 32px;
+  padding: 28px 28px 32px 33px;
   @media (min-width: 768px){
     position: relative;
+    padding: 28px 28px 32px 33px;
   }
   @media (min-width: 1150px){
-    width: 31%;
+    width: 25%;
   }
 }
 .production-process__desc-pic{
   position: absolute;
-  top: 28px;
-  left: 0;
-  padding: 0 29px;
+  top: 30px;
+  left: 33px;
   @media (min-width: 768px){
-    top: 40px;
-    padding: 0 33px 0 70px;
+    top: 34px;
+    left: 41px;
+  }
+  @media (min-width: 1150px){
+    top: 41px;
+    left: 36px;
   }
 }
 .production-process__title{
   position: absolute;
-  top: 23px;
-  left: 91px;
-  padding-right: 40px;
+  top: 24px;
+  left: 89px;
   font-size: $f-size;
   line-height: 24px;
   @media (min-width: 768px){
     position: initial;
-    padding-top: 65px;
-    padding-left: 40px;
+    padding-top: 11px;
+    padding-left: 72px;
     padding-right: 68px;
+    font-size: 20px;
+  }
+  @media (min-width: 1150px){
+    padding-top: 68px;
+    padding-left: 1px;
   }
 }
 .production-process__player{
@@ -58,7 +68,7 @@
   &::after{
     content: '';
     position: absolute;
-    top: 25%;
+    top: 27%;
     left: 30%;
     min-width: 101px;
     min-height: 77px;
@@ -69,13 +79,12 @@
     padding-top: 0;
     order: -1;
     &::after{
-      top: 40%;
-      left: 45%;
+      top: 26.5%;
+      left: 42.5%;
     }
   }
   @media (min-width: 1150px){
-    width: 70%;
-    padding-right: 10px;
+    width: 65%;
   }
 }
 .production-process__player-pic{
@@ -93,23 +102,32 @@
   }
 }
 .production-process__text{
-  padding: 0 24px 22px 0;
+  padding: 0 24px 25px 0;
   font-size: 13px;
   line-height: 24px;
   color: $color-main;
   @media (min-width: 768px){
     font-size: inherit;
     line-height: 30px;
-    padding-top: 32px;
-    padding-right: 71px;
-    padding-left: 42px;
-    padding-bottom: 35px;
+    margin-top: 32px;
+    margin-right: 15px;
+    margin-left: 7px;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 1150px){
+    margin-left: 0;
+    margin-bottom: 21px;
   }
 }
 .production-process__order-btn{
   @include flex-column;
-  padding-right: 12px;
+  width: 98%;
   @media (min-width: 768px){
-    padding: 0 42px 13px 42px;
+    width: 96.5%;
+    padding: 0 42px 13px 8px;
+  }
+  @media (min-width: 1150px){
+    width: 88%;
+    padding-left: 3px;
   }
 }

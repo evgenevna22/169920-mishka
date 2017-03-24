@@ -5,7 +5,7 @@
   @media (min-width: 768px){
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 58px 50px;
   }
 }
 .page-footer__logo{
@@ -32,6 +32,9 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
+  @media (min-width: 768px){
+    padding-right: 34px;
+  }
 }
 .page-footer__copyright-item{
   vertical-align: sub;

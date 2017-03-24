@@ -7,31 +7,49 @@
   }
 }
 .contacts__list{
-  padding: $padding-main;
+  padding: 30px 30px 6px;
   @media (min-width: 768px){
-    padding: 30px 50px;
+    position: relative;
+    padding: 30px 50px 25px;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      right: 53px;
+      width: 47px;
+      height: 82px;
+      background: url('../../img/icon-flag.svg');
+      @media (min-width: 1150px){
+        top: 62px;
+        left: 113px;
+      }
+    }
   }
   @media (min-width: 1150px){
-    padding-top: 34px;
+    padding-top: 52px;
     padding-left: 225px;
   }
 }
 .contacts__title{
-  padding-top: 35px;
-  padding-bottom: 23px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   font-size: 18px;
   @media (min-width: 768px){
+    padding-top: 26px;
+    padding-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
+  }
+  @media (min-width: 1150px){
+    padding-top: 18px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 .contacts__info{
   display: flex;
   padding-bottom: 30px;
   color: $color-main;
-  span{
-    padding-right: 32px;
-  }
   a{
     border-bottom: 1px solid #62d1ba;
     @media (min-width: 768px){
@@ -42,10 +60,24 @@
     font-size: 17px;
   }
 }
-.contacts__info--adress{
-  padding-right: 45px;
+.contacts__mail{
+  padding-right: 30px;
   @media (min-width: 768px){
-    padding-right: 30px;
+    padding-right: 24px;
+  }
+}
+.contacts__address{
+  padding-right: 32px;
+  @media (min-width: 768px){
+    padding-right: 28px;
+  }
+  @media (min-width: 1150px){
+    padding-right: 26px;
+  }
+}
+.contacts__info--adress{
+  @media (min-width: 768px){
+    padding-right: 19px;
   }
 }
 .contacts__item{
@@ -75,15 +107,15 @@ iframe{
   border: 0;
 }
 .map__writeus{
-  padding: $padding-main;
+  padding: 27px 30px 39px;
   @include flex-column;
   @media (min-width: 768px){
-    padding: 30px 270px;
+    padding: 43px 270px 57px;
   }
   @media (min-width: 1150px){
     width: 20%;
     padding-left: 225px;
     padding-bottom: 6px;
-    padding-top: 53px;
+    padding-top: 23px;
   }
 }

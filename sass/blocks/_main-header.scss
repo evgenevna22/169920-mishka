@@ -7,28 +7,30 @@
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: 0;
+  background-position-y: -19px;
   background-color: #f8f8f8;
   border-top: 1px solid $border-color;
   @media (min-width: 768px){
     min-height: 735px;
-    margin-top: -79px;
+    margin-top: -76px;
     background-size: cover;
+    background-position-y: 1px;
   }
 }
 .main-header__title {
-  padding: 62px 50px 0 41px;
-  margin-bottom: 193px;
+  padding: 70px 35px 0 20px;
+  margin-bottom: 192px;
   font-size: 27px;
   font-weight: bold;
   text-align: center;
   @media (min-width: 768px){
-    padding-top: 106px;
+    padding-top: 153px;
     font-size: 43px;
     line-height: 50px;
   }
   @media (min-width: 1150px) {
+    padding-right: 45px;
     font-size: 53px;
-    line-height: 53px;
+    line-height: 57px;
   }
 }
