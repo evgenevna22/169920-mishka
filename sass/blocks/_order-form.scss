@@ -8,6 +8,7 @@
   }
   @media (min-width: 1150px){
     padding-left: 110px;
+    padding-right: 0;
   }
 }
 .order-form--color{
@@ -118,11 +119,6 @@
     font-size: 19px;
     padding-bottom: 60px;
     padding-left: 79px;
-  }
-}
-.order-form__item--color{
-  @media (min-width: 768px){
-    width: 100%;
   }
 }
 .order-form__radio{
@@ -310,7 +306,7 @@ input[type="checkbox"]:checked + label::after{
     font-size: 19px;
   }
   @media (min-width: 1050px){
-    width: 82.3%;
+    width: 78.3%;
     margin-left: 24px;
   }
 }
@@ -322,7 +318,7 @@ input[type="checkbox"]:checked + label::after{
     padding-left: 19px;
   }
   @media (min-width: 1050px){
-    width: 74.4%;
+    width: 70.8%;
     margin-left: 28px;
     padding-left: 21px;
   }
@@ -334,7 +330,6 @@ input[type="checkbox"]:checked + label::after{
     padding-left: 17px;
   }
   @media (min-width: 1050px){
-    width: 75%;
     margin-left: 27px;
   }
 }
