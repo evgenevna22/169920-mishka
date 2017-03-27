@@ -2,8 +2,9 @@
 @import "../utils/mixins.scss";
 
 .main-nav {
+  position: relative;
   @include flex-column;
-  padding: 20px 30px 14px;
+  padding: 20px 0 0;
   @media (min-width: 768px){
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,25 +18,39 @@
 }
 .main-nav__toggle{
   position: absolute;
-  top: 29px;
-  right: 25px;
-  border: 0;
-  background-color: transparent;
+  top: 31px;
+  right: 30px;
   font-size: 0;
+  background-color: transparent;
+  border: 0;
   cursor: pointer;
   @media (min-width: 768px){
     display: none;
   }
 }
+@media (max-width: 766px) {
+  .main-nav__toggle--close{
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icon-menu-close.svg");
+  }
+  .main-nav__toggle--open{
+    width: 22px;
+    height: 14px;
+    background-image: url("../img/icon-menu-open.svg");
+  }
+}
 .main-nav__items{
   @include flex-column;
   width: 100%;
-  background-color: transparent;
+  background-color: #fff;
   @media (min-width: 768px){
     display: inline-flex;
     flex-direction: row;
     margin-left: auto;
+    background-color: transparent;
     order: 2;
+    z-index: 100;
   }
   @media (min-width: 1150px){
     flex-wrap: wrap;
@@ -44,14 +59,32 @@
     margin-left: 0;
   }
 }
+@media (max-width: 767px){
+  .main-nav__items--no-js{
+  display: block;
+  position: absolute;
+  top: 78px;
+  z-index: 10000;
+  }
+}
+.main-nav__items--closed{
+  display: none;
+  @media (min-width: 768px){
+    display: flex;
+  }
+}
 .main-nav__item{
   font-size: $f-size;
   line-height: 24px;
-  padding: 26px 0 28px 76px;
+  padding: 26px 0 28px 0;
   font-weight: bold;
   border-top: 1px solid $border-color;
+  @media (max-width: 767px) {
+    width: 100%;
+    // text-align: center;
+  }
   @media (min-width: 768px){
-    padding: 20px 35px 34px 0;
+    padding: 20px 0 34px 0;
     border: 0;
   }
   @media (min-width: 1150px){
@@ -59,8 +92,23 @@
     padding-bottom: 33px;
   }
 }
+.main-nav__item-link,
+.page-header__search-link,
+.page-header__cart-link{
+  &:hover{
+    color: #666666;
+    fill: red;
+  }
+  &:active{
+    color: #b2b2b2;
+  }
+}
 .main-nav__item-link{
-  padding: 26px 0;
+  padding: 26px 85px 26px 75px;
+  font-size: $f-size;
+  @media (min-width: 768px){
+    padding: 10px 24px 10px 0px;
+  }
   @media (min-width: 1150px){
     padding: 21px 0;
   }

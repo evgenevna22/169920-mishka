@@ -19,6 +19,12 @@
     justify-content: space-between;
     margin-bottom: 105px;
     border-top: 1px solid #ededed;
+    &:hover{
+      box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+    }
+    &:active{
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 .production-process__desc{
@@ -65,26 +71,38 @@
 }
 .production-process__player{
   padding-top: 95px;
-  &::after{
-    content: '';
+  svg{
     position: absolute;
     top: 27%;
     left: 30%;
     min-width: 101px;
     min-height: 77px;
-    background-image: url('../../img/icon-play.svg');
     cursor: pointer;
+    transgorm: scale(1);
+    transition: all 0.4s;
+    &:hover{
+      transition: all 0.4s;
+      transform: scale(1.2);
+    }
+    &:active{
+      transform: scale(0.8);
+
+    }
   }
   @media (min-width: 768px){
     padding-top: 0;
     order: -1;
-    &::after{
+    svg{
       top: 26.5%;
       left: 42.5%;
     }
   }
   @media (min-width: 1150px){
     width: 65%;
+    svg{
+      top: 41.5%;
+      left: 28.5%;
+    }
   }
 }
 .production-process__player-pic{

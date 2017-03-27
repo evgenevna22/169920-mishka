@@ -5,44 +5,87 @@
   border-top: 1px solid $border-color;
 }
 .page-header__logo{
-  margin-left: 86px;
+  margin-left: 37%;
+  margin-bottom: 14px;
+  &:hover{
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.3;
+  }
+  img{
+    width: 86px;
+    height: auto;
+  }
   @media (min-width: 768px){
+    img{
+      width: 113px;
+    }
     flex-basis: 113px;
     margin: 0;
+    padding-top: 9px;
+    margin-left: -2px;
     align-self: center;
   }
   @media (min-width: 1150px){
+    img{
+      width: 149px;
+    }
     align-self: baseline;
     order: 2;
     margin: 0;
-    padding-top: 20px;
-    padding-left: 53px;
+    padding-top: 8px;
+    padding-left: 30px;
   }
 }
+
 .page-header__user-block{
   position: relative;
   left: 0px;
   @include flex-column;
   width: 100%;
-  background-color: transparent;
+  background-color: #fff;
+    @media (max-width: 400px){
+      border-bottom: 1px solid $border-color;
+  }
   @media (min-width: 768px){
     flex-basis: 348px;
     flex-direction: row;
     order: 1;
     margin-left: auto;
+    background-color: transparent;
+    border-bottom: 0;
   }
   @media (min-width: 1150px){
     flex-basis: 350px;
     order: 3;
   }
 }
+@media (max-width: 767px){
+  .page-header__user-block--no-js{
+  display: block;
+  position: absolute;
+  top: 236px;
+  z-index: 10000;
+  }
+}
+.page-header__user-block--closed{
+  display: none;
+  @media (min-width: 768px){
+    display: flex;
+  }
+}
+
 .page-header__user-item{
   position: relative;
-  padding: 26px 0 28px 75px;
+  padding: 26px 0 28px 0;
   font-size: $f-size;
   line-height: 24px;
   font-weight: bold;
   border-top: 1px solid $border-color;
+  @media (max-width: 767px){
+    width: 100%;
+  }
   @media (min-width: 768px){
     padding: 0;
     border: 0;
@@ -51,6 +94,7 @@
 }
 .page-header__search-link,
 .page-header__cart-link{
+  padding: 26px 104px 26px 75px;
   @media (min-width: 768px){
     display: block;
     padding: 23px 22px 25px 60px;
@@ -72,9 +116,35 @@
 .page-header__search-icon,
 .page-header__cart-icon{
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 31px;
-  opacity: 0.2;
+  path{
+    fill: #d3d2d2;
+  }
+}
+.page-header__search-link,
+.page-header__cart-link{
+  &:hover{
+    path{
+      fill: #63d1bb;
+    }
+  }
+  &:active{
+    path{
+      opacity: 0.3;
+    }
+  }
+}
+.page-header__search-icon{
+  @media (min-width: 768px){
+  top: 35px;
+  left: 33px;
+  }
+}
+.page-header__cart-icon{
+  @media (min-width: 768px){
+  top: 33px;
+  }
 }
 .page-header__search{
   @media (min-width: 768px){
