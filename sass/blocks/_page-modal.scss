@@ -1,0 +1,94 @@
+.page-modal--show{
+  display: block;
+}
+.page-modal{
+  position: fixed;
+  top: 25%;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  box-shadow: 0 7px 15px 0px rgba(0,0,0,0.3);
+  z-index: 10000;
+  overflow: hidden;
+  @media (min-width: 450px) {
+    width: 73%;
+    left: 15%;
+  }
+  @media (min-width: 1150px) {
+    width: 44%;
+    left: 27%;
+  }
+}
+.page-modal--close{
+  display: none;
+}
+.page-modal__item{
+  @include flex-column;
+  padding: 36px 30px 46px;
+  @media (min-width: 768px){
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+.page-modal__title{
+  margin-bottom: 10px;
+  padding: 0 5px;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-modal__text{
+  margin-bottom: 13px;
+  text-align: center;
+  color: $color-main;
+}
+.page-modal__add-size{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+.page-modal__size{
+  min-width: 82px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: $f-size;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: $color-main;
+  background-color: transparent;
+  border: 2px solid $border-color;
+  cursor: pointer;
+  outline: none;
+  &:hover{
+    border: 2px solid #c7c7c7;
+  }
+  &:active{
+    border: 2px solid #63d1bb;
+  }
+  &--active{
+    border: 2px solid #63d1bb;
+  }
+}
+.page-modal__add-btn{
+  padding: 20px 0;
+  font-size: $f-size;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: #63d1bb;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+  &:hover{
+    background-color: #56c3b2;
+    transition: all 0.2s;
+  }
+  &:active{
+    opacity: 0.3;
+    transition: all 0.2s;
+  }
+}

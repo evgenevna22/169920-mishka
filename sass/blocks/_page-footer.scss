@@ -12,6 +12,17 @@
   display: none;
   @media (min-width: 768px) {
     display: block;
+    margin-top: -7px;
+    &:hover{
+      svg{
+        fill: #46c1ae;
+      }
+    }
+    &:active{
+      svg{
+        opacity: 0.3;
+      }
+    }
   }
 }
 .page-footer__social{
@@ -21,6 +32,7 @@
   }
 }
 .page-footer__copyright{
+  position: relative;
   padding: 23px 30px 30px 30px;
   @media (min-width: 768px){
     padding: 0;
@@ -33,9 +45,28 @@
   line-height: 18px;
   font-weight: bold;
   @media (min-width: 768px){
-    padding-right: 34px;
+    padding-left: 0;
+    padding-right: 62px;
   }
 }
 .page-footer__copyright-item{
-  vertical-align: sub;
+  position: absolute;
+  right: 69px;
+  svg{
+      fill: #63d1bb;
+    }
+  &:hover{
+    svg{
+      fill: #46c1ae;
+    }
+  }
+  &:active{
+    svg{
+      opacity: 0.3;
+    }
+  }
+  @media (min-width: 768px){
+    right: 0px;
+    top: 0;
+  }
 }

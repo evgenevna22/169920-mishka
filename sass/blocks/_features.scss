@@ -15,7 +15,7 @@
   font-size: 25px;
   margin-bottom: 86px;
   @media (min-width: 768px){
-    margin-bottom: 100px;
+    margin-bottom: 103px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -67,34 +67,51 @@
     order: 3;
   }
 }
+.features__item-pic--style{
+  left: 0;
+  @media (min-width: 768px){
+    left: 3px;
+  }
+}
 .features__item--likes{
   @media (min-width: 768px){
     order: 5;
   }
 }
-.features__item--handmade{
-  img{
-    left: 5px;
-    top: -53px;
+.features__item-pic--likes{
+  top: -49px;
+  left: 8px;
+  @media (min-width: 768px){
+    left: 11px;
   }
+}
+.features__item--handmade{
   @media (min-width: 768px){
     order: 2;
   }
+}
+.features__item-pic--handmade{
+  left: 4px;
+  top: -51px;
 }
 .features__item--native{
   @media (min-width: 768px){
     order: 4;
   }
 }
+.features__item-pic--native{
+  top: -50px;
+  left: -5px;
+}
 .features__item--giftwrap{
-  img{
-    top: -55px;
-    left: 3px;
-  }
   @media (min-width: 768px){
     order: 6;
-    img{
-      left: 5px;
-    }
+  }
+}
+.features__item-pic--giftwrap{
+  top: -52px;
+  left: 3px;
+  @media (min-width: 768px){
+    left: 5px;
   }
 }
