@@ -45,9 +45,7 @@
   @include flex-column;
   width: 100%;
   background-color: #fff;
-    @media (max-width: 400px){
-      border-bottom: 1px solid $border-color;
-  }
+  border-bottom: 1px solid $border-color;
   @media (min-width: 768px){
     flex-basis: 348px;
     flex-direction: row;

@@ -25,10 +25,10 @@
   padding: $padding-main;
   @media (min-width: 768px){
     position: relative;
-    padding: 47px 48px;
+    padding: 34px 48px 47px;
   }
   @media (min-width: 1150px){
-    padding: 33px 66px;
+    padding: 30px 66px 33px;
   }
 }
 .products__desc{
@@ -145,7 +145,7 @@
   height: 315px;
   @media (min-width: 768px){
     position: absolute;
-    top: 154px;
+    top: 140px;
     right: 50px;
     width: 334px;
     height: 405px;
@@ -153,7 +153,7 @@
   @media (min-width: 1150px){
     width: 525px;
     height: 637px;
-    top: 73px;
+    top: 69px;
     z-index: 5;
   }
 }

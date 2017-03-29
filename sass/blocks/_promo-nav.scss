@@ -45,9 +45,7 @@
     }
   }
   @media (min-width: 768px){
-    padding-top: 28px;
-    padding-right: 196px;
-    padding-left: 35px;
+    padding: 29px 196px 41px 35px;
     font-size: 20px;
     line-height: inherit;
     &:hover{
@@ -60,8 +58,10 @@
     }
   }
   @media (min-width: 1150px){
+    padding-top: 28px;
     padding-right: 383px;
     padding-left: 38px;
+    padding-bottom: 32px;
     &--toys{
       padding-right: 404px;
       padding-left: 37px;
