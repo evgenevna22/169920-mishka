@@ -76,7 +76,7 @@
 
 .page-header__user-item{
   position: relative;
-  padding: 26px 0 28px 0;
+  // padding: 26px 0 28px 0;
   font-size: $f-size;
   line-height: 24px;
   font-weight: bold;
@@ -92,7 +92,10 @@
 }
 .page-header__search-link,
 .page-header__cart-link{
+  display: block;
   padding: 26px 104px 26px 75px;
+  padding-right: 0;
+  box-sizing: border-box;
   @media (min-width: 768px){
     display: block;
     padding: 23px 22px 25px 60px;
