@@ -4,13 +4,15 @@ var menuJs = document.querySelector(".main-nav__items");
 var userBlock = document.querySelector(".page-header__user-block");
 var openMenu = document.querySelector(".main-nav__toggle");
 var btnBuy = document.querySelectorAll("a.btn-buy");
+var btnOrder = document.querySelector(".order-form__btn");
+var btnModal = document.querySelector(".page-modal__add-btn");
 var popup = document.querySelector(".page-modal");
 var overlay = document.querySelector(".overlay");
 
 menuJs.classList.remove("main-nav__items--no-js");
-menuJs.classList.add("main-nav__items--closed");
+menuJs.classList.add("main-nav__items--opened");
 userBlock.classList.remove("page-header__user-block--no-js");
-userBlock.classList.add("page-header__user-block--closed");
+userBlock.classList.add("page-header__user-block--opened");
 
 
 openMenu.addEventListener("click", function () {
@@ -63,4 +65,12 @@ window.addEventListener("keydown", function(event) {
       overlay.classList.add("overlay--close");
     }
   }
+});
+
+btnOrder.addEventListener("click", function (event) {
+  event.preventDefault();
+});
+
+btnModal.addEventListener("click", function (event) {
+  event.preventDefault();
 });

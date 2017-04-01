@@ -8,7 +8,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $color-main;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid $color-main;
   outline: none;
   cursor: pointer;
@@ -16,7 +16,7 @@
   &:hover{
     transition: all 0.4s;
     background-color: #444444;
-    color: #fff;
+    color: #ffffff;
   }
   &:active{
     transition: all 0.3s;

@@ -29,19 +29,19 @@
   margin-top: -80px;
   @media (min-width: 768px){
     margin-top: -28px;
-    background: #fff url("../img/review@1x.jpg") no-repeat 0 0;
+    background: #ffffff url("../img/review@1x.jpg") no-repeat 0 0;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
       width: 350px;
-      background: #fff url("../img/review@2x.jpg") no-repeat 0 0;
+      background: #ffffff url("../img/review@2x.jpg") no-repeat 0 0;
       background-size: auto 457px;
     }
   }
   @media (min-width: 1150px){
     margin-top: -21px;
-    background: #fff url("../img/review@1x.jpg") no-repeat 50px 0;
+    background: #ffffff url("../img/review@1x.jpg") no-repeat 50px 0;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) and (min-width: 1150px){
       width: 400px;
-      background: #fff url("../img/review@2x.jpg") no-repeat 50px 0;
+      background: #ffffff url("../img/review@2x.jpg") no-repeat 50px 0;
       background-size: auto 457px;
     }
   }
@@ -127,7 +127,7 @@
   height: 50px;
   margin-top: 29px;
   margin-bottom: 38px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid $border-color;
   @media (min-width: 768px){
     justify-content: flex-end;
@@ -154,7 +154,7 @@
 }
 .reviews__btn-prev{
   border-right: 1px solid $border-color;
-  background: #fff url("../img/icon-left-arrow.svg") no-repeat 38px 12px;
+  background: #ffffff url("../img/icon-left-arrow.svg") no-repeat 38px 12px;
   @media (min-width: 768px){
     background: transparent url("../img/icon-left-arrow.svg") no-repeat 7px 11px;
     background-size: 52px 26px;
@@ -162,7 +162,7 @@
   }
 }
 .reviews__btn-next{
-  background: #fff url("../img/icon-right-arrow.svg") no-repeat 38px 12px;
+  background: #ffffff url("../img/icon-right-arrow.svg") no-repeat 38px 12px;
   @media (min-width: 768px){
     background: transparent url("../img/icon-right-arrow.svg") no-repeat 13px 11px;
     background-size: 50px 26px;

@@ -70,15 +70,16 @@
   }
 }
 .production-process__player{
+  position: relative;
   padding-top: 95px;
   svg{
     position: absolute;
-    top: 27%;
+    top: 55%;
     left: 30%;
     min-width: 101px;
     min-height: 77px;
     cursor: pointer;
-    transgorm: scale(1);
+    transform: scale(1);
     transition: all 0.4s;
     &:hover{
       transition: all 0.4s;
@@ -93,16 +94,12 @@
     padding-top: 0;
     order: -1;
     svg{
-      top: 26.5%;
+      top: 42%;
       left: 42.5%;
     }
   }
   @media (min-width: 1150px){
     width: 65%;
-    svg{
-      top: 41.5%;
-      left: 28.5%;
-    }
   }
 }
 .production-process__player-pic{
